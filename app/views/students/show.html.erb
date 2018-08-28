@@ -1,11 +1,18 @@
 <h1><%= @student.name %></h1>
 
-  <% @addresses.each do |address| %>
-    <ul>
-      <li>Description: <%= address.description %></li>
-      <li>Street: <%= address.street %></li>
-      <li>City: <%= address.city %></li>
-      <li>State: <%= address.state %></li>
-      <li>Zip Code: <%= address.zip_code %></li>
-    </ul>
+<% @addresses.each do |address| %>
+  <ul>
+    <li>Description: <%= address.description %></li>
+    <li>Street: <%= address.street %></li>
+    <li>City: <%= address.city %></li>
+    <li>State: <%= address.state %></li>
+    <li>Zip Code: <%= address.zip_code %></li>
+  </ul>
+<% end %>
+
+<h3>Courses:</h3>
+<ul>
+  <% @courses.each do |course| %>
+    <li><%= course.name %></li>
   <% end %>
+</ul>
